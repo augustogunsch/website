@@ -1,0 +1,152 @@
+/*
+ * #000000 - Black
+ * #FFC857 - Yellow
+ * #E9724C - Orange
+ * #C5283D - Red
+ * #255F85 - Blue
+ */
+
+html {
+	font-family: sans-serif;
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	height: 100%;
+	display: flex;
+}
+
+/* Navigation bar */
+
+nav {
+	background-color: #255F85;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+nav a {
+	width: 100%;
+	padding: .5rem 3rem;
+	text-align: center;
+	font-size: 2rem;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: black;
+}
+
+nav a:hover {
+	cursor: pointer;
+}
+
+nav a.selected {
+	background-color: white;
+}
+
+/* Main content */
+
+h2 {
+	font-size: 1.2rem;
+}
+
+nav a:hover {
+	background-color: white;
+}
+
+main {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: auto;
+	background-color: #fbfce3;
+}
+
+main div {
+	padding: 1em;
+}
+
+/* Icons */
+
+.icon {
+	margin: 1em;
+	margin-left: 0;
+	padding-left: 2em;
+	display: block;
+	position: relative;
+}
+
+.icon::before {
+	content: ' ';
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height: 1em;
+	width: 1em;
+	display: block;
+	position: absolute;
+	left: .5em;
+}
+
+.icon code {
+	overflow-x: auto;
+	display: block;
+	font-size: 1em;
+}
+
+#monero::before {
+	background-image: url('monero.png');
+}
+
+#github::before {
+	background-image: url('github.png');
+}
+
+#linkedin::before {
+	background-image: url('linkedin.png');
+}
+
+#email::before {
+	background-image: url('email.png');
+}
+
+#matrix::before {
+	background-image: url('matrix.png');
+}
+
+/* Quote */
+
+figure {
+	background-color: white;
+	padding: 1em;
+	margin: 0;
+	border-radius: 10px;
+	border: 1px dashed #888;
+}
+
+blockquote {
+	margin: 0;
+}
+
+figcaption {
+	text-align: right;
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 1000px) {
+	body {
+		flex-direction: column-reverse;
+	}
+
+	nav a {
+		width: auto;
+	}
+
+	nav {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+}

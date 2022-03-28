@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Augusto Gunsch</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}"/>
+		<link rel="icon" href="{{ url_for('static', filename='icon.png') }}"/>
+	</head>
+	<body>
+		<main>
+			<div id="content">
+				{% autoescape false %}
+				{{ body }}
+				{% endautoescape %}
+			</div>
+			<div>
+				<figure>
+				<blockquote>{{ quote }}</blockquote>
+				<figcaption>{{ author }}</figcaption>
+				</figure>
+			</div>
+		</main>
+		<nav>
+			<a onclick="loadPage(this)" class="selected" id="index">Home</a>
+			<a onclick="loadPage(this)" id="projects">Projects</a>
+			<!--<a onclick="loadPage(this)" id="articles">Articles</a>-->
+			<!--<a onclick="loadPage(this)" id="library">Library</a>-->
+		</nav>
+	</body>
+	<script src="{{ url_for('static', filename='index.js') }}"></script>
+</html>
