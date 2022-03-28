@@ -11,12 +11,5 @@ key](static/augustogunsch@tutanota.com.pub.asc).
 <span class="icon" id="github">[Github](https://github.com/augustogunsch)</span>
 <span class="icon" id="linkedin">[LinkedIn](https://www.linkedin.com/in/augusto-gunsch-210b17218)</span>
 
-## Skills
-
-- Programming languages: C/C++, Python, Shell Script, JavaScript, Rust
-- Web: HTML and CSS
-- Languages: English and Portuguese
-- Calculus
-
 ## Donations
 <span class="icon" id="monero">Monero: <code>86JjGobWkTwh7k5SoBhXVB4Nbx28fhVi122knfyHYWJvN33Jsn1Z6yPAXfc4dsRhLN4zAAs29fUEJWmAmVJxoPUgGmtpS5P</code></span>
