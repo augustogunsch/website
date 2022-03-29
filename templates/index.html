@@ -7,25 +7,26 @@
 		<link rel="icon" href="{{ url_for('static', filename='icon.png') }}"/>
 	</head>
 	<body>
+		<header>
+			<h1>Augusto<br>Gunsch</h1>
+
+			<nav>
+				<a href='contact'>Contact</a>
+				<a href='about'>About</a>
+				<a href='projects' class='button'>Projects</a>
+			</nav>
+		</header>
+
 		<main>
-			<div id="content">
-				{% autoescape false %}
-				{{ body }}
-				{% endautoescape %}
-			</div>
-			<div>
-				<figure>
-				<blockquote>{{ quote }}</blockquote>
+			<figure>
+				<blockquote>
+					{{ quote }}
+				</blockquote>
 				<figcaption>{{ author }}</figcaption>
-				</figure>
-			</div>
+			</figure>
+			<span>
+				I turn <mark>ideas</mark><br>into<br><mark>software</mark>.
+			</span>
 		</main>
-		<nav>
-			<a onclick="loadPage(this)" class="selected" id="index">Home</a>
-			<a onclick="loadPage(this)" id="projects">Projects</a>
-			<!--<a onclick="loadPage(this)" id="articles">Articles</a>-->
-			<!--<a onclick="loadPage(this)" id="library">Library</a>-->
-		</nav>
 	</body>
-	<script src="{{ url_for('static', filename='index.js') }}"></script>
 </html>

@@ -7,146 +7,83 @@
  */
 
 html {
-	font-family: sans-serif;
 	height: 100%;
+	display: flex;
 }
 
 body {
-	margin: 0;
-	height: 100%;
+	background-color: #F2F2FF;
 	display: flex;
+	margin: 1em;
+	width: 100%;
+	border: 1px solid black;
+	font-family: "Noto Sans Mono", "Monaco", serif;
+	flex-direction: column;
 }
 
-/* Navigation bar */
-
-nav {
-	background-color: #255F85;
+body header {
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
+}
+
+header h1 {
+	font-family: "Noto Serif Display", "American Typewriter", serif;
+	font-weight: normal;
+	text-align: center;
+	display: block;
+	margin: 2rem;
+}
+
+header nav {
+	display: flex;
+	align-items: center;
+	margin 2rem;
+	margin-right: 4rem;
 }
 
 nav a {
-	width: 100%;
-	padding: .5rem 3rem;
-	text-align: center;
-	font-size: 2rem;
-	box-sizing: border-box;
+	margin: 1rem;
+	font-size: 1.2rem;
 	text-decoration: none;
 	color: black;
+	padding: 1rem;
 }
 
-nav a:hover {
-	cursor: pointer;
-}
-
-nav a.selected {
-	background-color: white;
-}
-
-/* Main content */
-
-h2 {
-	font-size: 1.2rem;
-}
-
-nav a:hover {
-	background-color: white;
+.button {
+	background-color: #17466E;
+	color: #F2F2FF;
+	border-radius: 20px;
 }
 
 main {
-	width: 100%;
 	height: 100%;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	overflow: auto;
-	background-color: #fbfce3;
+	align-items: center;
+	justify-content: space-evenly;
 }
 
-main div {
-	padding: 1em;
-}
-
-/* Icons */
-
-.icon {
-	margin: 1em;
-	margin-left: 0;
-	padding-left: 2em;
+main figure {
+	width: 40%;
+	margin: 2rem;
 	display: block;
 	position: relative;
+	font-size: 1.5rem;
+	right: 4rem;
+	bottom: 1rem;
 }
 
-.icon::before {
-	content: ' ';
-	background-size: 100%;
-	background-repeat: no-repeat;
-	height: 1em;
-	width: 1em;
-	display: block;
-	position: absolute;
-	left: .5em;
-}
-
-.icon code {
-	overflow-x: auto;
-	display: block;
-	font-size: 1em;
-}
-
-#monero::before {
-	background-image: url('monero.png');
-}
-
-#github::before {
-	background-image: url('github.png');
-}
-
-#linkedin::before {
-	background-image: url('linkedin.png');
-}
-
-#email::before {
-	background-image: url('email.png');
-}
-
-#matrix::before {
-	background-image: url('matrix.png');
-}
-
-/* Quote */
-
-figure {
-	background-color: white;
-	padding: 1em;
-	margin: 0;
-	border-radius: 10px;
-	border: 1px dashed #888;
-}
-
-blockquote {
-	margin: 0;
-}
-
-figcaption {
+main figure figcaption {
 	text-align: right;
 }
 
+main span {
+	text-align: right;
+	font-size: 3rem;
+	position: relative;
+	bottom: 5rem;
+}
 
-/* Mobile */
-
-@media only screen and (max-width: 1000px) {
-	body {
-		flex-direction: column-reverse;
-	}
-
-	nav a {
-		width: auto;
-	}
-
-	nav {
-		flex-direction: row;
-		flex-wrap: wrap;
-	}
+mark {
+	background-color: #EDAF1F;
+	position: relative;
 }
