@@ -1,9 +1,7 @@
 /*
- * #000000 - Black
- * #FFC857 - Yellow
- * #E9724C - Orange
- * #C5283D - Red
- * #255F85 - Blue
+ * #F2F2FF - White
+ * #EDAF1F - Orange
+ * #17466E - Blue
  */
 
 html {
@@ -13,8 +11,12 @@ html {
 
 body {
 	background-color: #F2F2FF;
+	background-image: url("duck.png");
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: right bottom;
 	display: flex;
-	margin: 1em;
+	margin: 0;
 	width: 100%;
 	font-family: "Noto Sans Mono", "Monaco", serif;
 	flex-direction: column;
@@ -23,7 +25,7 @@ body {
 header {
 	display: flex;
 	justify-content: space-between;
-	margin: 1rem;
+	padding: 2rem;
 }
 
 header h1 {
@@ -59,11 +61,12 @@ main {
 	align-items: center;
 	justify-content: space-evenly;
 	flex-wrap: wrap-reverse;
-	margin-bottom: 3rem;
+	padding: 1rem;
+	padding-bottom: 5rem;
 }
 
 main figure {
-	max-width: 40%;
+	max-width: 30%;
 	display: block;
 	font-size: 1.5rem;
 	margin: 0;
@@ -79,11 +82,16 @@ main span {
 }
 
 mark {
-	background-color: #EDAF1F;
+	background-color: #17466E;
+	color: #F2F2FF;
 	position: relative;
 }
 
 @media only screen and (max-width: 600px) {
+
+	body {
+		background-image: none;
+	}
 
 	main {
 		margin-bottom: 0;
@@ -97,5 +105,4 @@ mark {
 	main figure {
 		max-width: 100%;
 	}
-
 }
