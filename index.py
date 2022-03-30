@@ -49,7 +49,7 @@ def page(page):
     if os.path.isfile(md):
         body = read_md(md)
 
-        return render_template(html, body=body)
+        return render_template(html, body=body, page=page.capitalize())
     else:
         return not_found()
 
