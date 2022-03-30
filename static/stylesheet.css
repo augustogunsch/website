@@ -58,6 +58,7 @@
 	background-color: #17466E;
 	color: #F2F2FF;
 	border-radius: 20px;
+	box-shadow: 2px 2px 0 black;
 }
 
 #page {
@@ -106,6 +107,7 @@
 }
 
 #slogan mark {
+	box-shadow: 2px 2px 0 black;
 	background-color: #17466E;
 	color: #F2F2FF;
 	position: relative;
