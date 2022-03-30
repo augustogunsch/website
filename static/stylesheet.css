@@ -4,12 +4,12 @@
  * #17466E - Blue
  */
 
-html {
+#html {
 	height: 100%;
 	display: flex;
 }
 
-body {
+#body {
 	background-color: #F2F2FF;
 	background-image: url("duck.png");
 	background-size: 50%;
@@ -22,13 +22,13 @@ body {
 	flex-direction: column;
 }
 
-header {
+#header {
 	display: flex;
 	justify-content: space-between;
 	padding: 2rem;
 }
 
-header h1 {
+#title {
 	font-family: "Noto Serif Display", "American Typewriter", serif;
 	font-weight: normal;
 	text-align: center;
@@ -36,12 +36,17 @@ header h1 {
 	margin: 0;
 }
 
-header nav {
+#title a {
+	text-decoration: none;
+	color: black;
+}
+
+#links {
 	display: flex;
 	align-items: center;
 }
 
-nav a {
+#links a {
 	margin: 1rem;
 	font-size: 1.2rem;
 	text-decoration: none;
@@ -49,7 +54,7 @@ nav a {
 	padding: 1rem;
 }
 
-.button {
+#links .button {
 	background-color: #17466E;
 	color: #F2F2FF;
 	border-radius: 20px;
@@ -73,11 +78,11 @@ nav a {
 	margin: .5em 0;
 }
 
-#social a img {
+#social .icon {
 	width: 100%;
 }
 
-main {
+#main {
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -85,48 +90,47 @@ main {
 	flex-wrap: wrap-reverse;
 }
 
-main figure {
+#quote {
 	max-width: 30%;
 	display: block;
 	font-size: 1.5rem;
 	margin: 0;
 }
 
-main figure figcaption {
+#quote figcaption {
 	text-align: right;
 }
 
-main span {
+#slogan {
 	text-align: right;
 	font-size: 3rem;
 }
 
-mark {
+#slogan mark {
 	background-color: #17466E;
 	color: #F2F2FF;
 	position: relative;
 }
 
 @media only screen and (max-width: 600px) {
-
-	body {
+	#body {
 		background-image: none;
 	}
 
-	main {
+	#main {
 		margin-bottom: 0;
 	}
 
-	 header {
+	#header {
 		flex-direction: column;
 		align-items: center;
 	}
 
-	main figure {
+	#quote {
 		max-width: 100%;
 	}
 
-	mark {
+	#slogan mark {
 		background-color: #EDAF1F;
 		color: black;
 	}

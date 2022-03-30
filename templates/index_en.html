@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html id="html">
 	<head>
 		<meta charset="utf-8"/>
 		<title>Augusto Gunsch</title>
 		<link rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}"/>
 		<link rel="icon" href="{{ url_for('static', filename='icon.png') }}"/>
 	</head>
-	<body>
-		<header>
-			<h1>Augusto<br>Gunsch</h1>
+	<body id="body">
+		<header id="header">
+			<h1 id="title"><a href='/'>Augusto<br>Gunsch</a></h1>
 
-			<nav>
+			<nav id="links">
 				<a href='contact'>Contact</a>
 				<a href='about'>About</a>
 				<a href='projects' class='button'>Projects</a>
@@ -20,20 +20,20 @@
 		<div id="page">
 			<div id="social">
 				<a href="https://github.com/augustogunsch" target="_blank">
-				<img src="{{ url_for('static', filename='github.png') }}">
+				<img class="icon" src="{{ url_for('static', filename='github.png') }}">
 				</a>
 				<a href="https://www.linkedin.com/in/augusto-gunsch-210b17218" target="_blank">
-				<img src="{{ url_for('static', filename='linkedin.png') }}">
+				<img class="icon" src="{{ url_for('static', filename='linkedin.png') }}">
 				</a>
 			</div>
-			<main>
-				<figure>
+			<main id="main">
+				<figure id="quote">
 					<blockquote>
 						{{ quote }}
 					</blockquote>
 					<figcaption>{{ author }}</figcaption>
 				</figure>
-				<span>
+				<span id="slogan">
 					I turn <mark>ideas</mark><br>into<br><mark>software</mark>.
 				</span>
 			</main>

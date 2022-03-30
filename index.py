@@ -44,11 +44,12 @@ def index():
 @app.route('/<page>')
 def page(page):
     md = CONTENT_DIR + '%s_%s.md' % (page, lang)
+    html = 'page_%s.html' % lang
 
     if os.path.isfile(md):
         body = read_md(md)
 
-        return body
+        return render_template(html, body=body)
     else:
         return not_found()
 

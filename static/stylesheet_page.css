@@ -1,0 +1,42 @@
+#wrapper {
+	display: flex;
+	justify-content: center;
+	padding: 3rem 1rem 5rem;
+}
+
+#content {
+	background-color: white;
+	padding: 2rem;
+	box-shadow: 1px 0px 10px black;
+	text-align: justify;
+}
+
+@media only screen and (max-width: 600px) {
+	#content {
+		max-width: 90%;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	#content {
+		max-width: 80%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	#content {
+		max-width: 70%;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	#content {
+		max-width: 60%;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	#content {
+		max-width: 50%;
+	}
+}
