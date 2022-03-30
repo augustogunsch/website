@@ -91,7 +91,6 @@
 }
 
 #quote {
-	max-width: 30%;
 	display: block;
 	font-size: 1.5rem;
 	margin: 0;
@@ -128,10 +127,35 @@
 
 	#quote {
 		max-width: 100%;
+		margin: 2rem 0;
+	}
+
+	#slogan {
+		margin: 2rem;
 	}
 
 	#slogan mark {
 		background-color: #EDAF1F;
 		color: black;
+	}
+}
+
+
+@media only screen and (min-width: 600px) {
+	#quote {
+		max-width: 80%;
+	}
+}
+
+
+@media only screen and (min-width: 768px) {
+	#quote {
+		max-width: 60%;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	#quote {
+		max-width: 40%;
 	}
 }
