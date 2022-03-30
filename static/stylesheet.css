@@ -105,4 +105,9 @@ mark {
 	main figure {
 		max-width: 100%;
 	}
+
+	mark {
+		background-color: #EDAF1F;
+		color: black;
+	}
 }
