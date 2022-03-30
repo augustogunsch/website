@@ -18,14 +18,16 @@ serving inflections of most words from the following languages:
 - Russian 
 - Spanish
 
-Also includes a web user interface. Based on the “[wiktextract](https://pypi.org/project/wiktextract)” Python script
-and relying on [kaikki.org](https://kaikki.org). There's a demo with Polish
-installed, available <a href="http://augustogunsch.com:8000"
-target="_blank">here</a>.
+Also includes a web user interface. Based on the
+“[wiktextract](https://pypi.org/project/wiktextract)” Python script and relying
+on [kaikki.org](https://kaikki.org).
 
 It is not yet ready but usable, though there is no streamlined installation
 process. You can find the repository
-[here](https://github.com/augustogunsch/inflectived).
+[here](https://github.com/augustogunsch/inflectived). There's a demo with
+Polish installed, available <a href="http://augustogunsch.com:8000"
+target="_blank">here</a>.
+
 
 ## Install-Arch
 Bash scripts for installing my setup of Arch and Artix Linux. Available on my
