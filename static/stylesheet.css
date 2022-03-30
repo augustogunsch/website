@@ -55,14 +55,34 @@ nav a {
 	border-radius: 20px;
 }
 
-main {
+#page {
 	height: 100%;
+	display: flex;
+	margin: 1rem;
+	margin-bottom: 4rem;
+}
+
+#social {
+	width: 1.5em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#social a {
+	margin: .5em 0;
+}
+
+#social a img {
+	width: 100%;
+}
+
+main {
+	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
 	flex-wrap: wrap-reverse;
-	padding: 1rem;
-	padding-bottom: 5rem;
 }
 
 main figure {

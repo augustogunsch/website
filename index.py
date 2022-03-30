@@ -9,6 +9,8 @@ app = Flask(__name__)
 CONTENT_DIR = 'content/'
 STATIC_DIR = 'static/'
 
+lang = 'en'
+
 def not_found():
     return '<h1>This page does not exist</h1>', 404
 
@@ -34,22 +36,13 @@ def get_quote(lang):
 
 @app.route('/')
 def index():
-    return redirect(url_for('index_lang', lang='en'))
+    quote, author = get_quote(lang)
+    index = 'index_%s.html' % lang
 
-@app.route('/<lang>')
-def index_lang(lang):
-    md = CONTENT_DIR + 'index_%s.md' % lang
+    return render_template(index, quote=quote, author=author)
 
-    if os.path.isfile(md):
-        body = read_md(md)
-        quote, author = get_quote(lang)
-
-        return render_template('index.html', body=body, quote=quote, author=author)
-    else:
-        return not_found()
-
-@app.route('/<lang>/<page>')
-def page_lang(lang, page):
+@app.route('/<page>')
+def page(page):
     md = CONTENT_DIR + '%s_%s.md' % (page, lang)
 
     if os.path.isfile(md):
