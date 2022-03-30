@@ -11,27 +11,42 @@
 	text-align: justify;
 }
 
+#content .scroll {
+	display: inline-block;
+	overflow-x: auto;
+	max-width: 100%;
+}
+
+#content .scroll img {
+	height: 1em;
+}
+
 @media only screen and (max-width: 600px) {
 	#content {
 		max-width: 90%;
+		width: auto;
+	}
+
+	#wrapper {
+		padding-top: 0;
 	}
 }
 
 @media only screen and (min-width: 600px) {
 	#content {
-		max-width: 80%;
+		width: 80%;
 	}
 }
 
 @media only screen and (min-width: 768px) {
 	#content {
-		max-width: 70%;
+		width: 70%;
 	}
 }
 
 @media only screen and (min-width: 992px) {
 	#content {
-		max-width: 60%;
+		width: 61%;
 	}
 }
 
