@@ -28,10 +28,14 @@ process. You can find the repository
 Polish installed, available <a href="http://augustogunsch.com:8000"
 target="_blank">here</a>.
 
-
 ## Install-Arch
 Bash scripts for installing my setup of Arch and Artix Linux. Available on my
 [Github](https://github.com/augustogunsch/install-arch).
+
+## Cabinet
+Simple static website generator, written in Python, for note taking, where the
+source files are written in LaTeX. The repository is <a
+href="https://github.com/augustogunsch/Cabinet">here</a>.
 
 ## Jackc
 Compiler and assembler of the Jack programming language, for the Hack computer architecture. Written in C.
