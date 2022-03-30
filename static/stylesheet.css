@@ -16,14 +16,14 @@ body {
 	display: flex;
 	margin: 1em;
 	width: 100%;
-	border: 1px solid black;
 	font-family: "Noto Sans Mono", "Monaco", serif;
 	flex-direction: column;
 }
 
-body header {
+header {
 	display: flex;
 	justify-content: space-between;
+	margin: 1rem;
 }
 
 header h1 {
@@ -31,14 +31,12 @@ header h1 {
 	font-weight: normal;
 	text-align: center;
 	display: block;
-	margin: 2rem;
+	margin: 0;
 }
 
 header nav {
 	display: flex;
 	align-items: center;
-	margin 2rem;
-	margin-right: 4rem;
 }
 
 nav a {
@@ -60,16 +58,15 @@ main {
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
+	flex-wrap: wrap-reverse;
+	margin-bottom: 3rem;
 }
 
 main figure {
-	width: 40%;
-	margin: 2rem;
+	max-width: 40%;
 	display: block;
-	position: relative;
 	font-size: 1.5rem;
-	right: 4rem;
-	bottom: 1rem;
+	margin: 0;
 }
 
 main figure figcaption {
@@ -79,11 +76,26 @@ main figure figcaption {
 main span {
 	text-align: right;
 	font-size: 3rem;
-	position: relative;
-	bottom: 5rem;
 }
 
 mark {
 	background-color: #EDAF1F;
 	position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+
+	main {
+		margin-bottom: 0;
+	}
+
+	 header {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	main figure {
+		max-width: 100%;
+	}
+
 }
