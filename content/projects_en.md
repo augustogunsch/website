@@ -24,8 +24,7 @@ on [kaikki.org](https://kaikki.org).
 
 It is not yet ready but usable, though there is no streamlined installation
 process. You can find the repository
-[here](https://github.com/augustogunsch/inflectived). There's a demo with
-Polish installed, available <a href="http://augustogunsch.com:8000"
+[here](https://github.com/augustogunsch/inflectived). There's a demo available <a href="http://inflective.augustogunsch.com"
 target="_blank">here</a>.
 
 ## Install-Arch
