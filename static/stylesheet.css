@@ -113,20 +113,6 @@
 	position: relative;
 }
 
-#banner {
-	background-color: red;
-	color: white;
-	padding: 10px;
-	font-weight: bold;
-	font-size: 30px;
-	text-align: center;
-	font-family: sans-serif;
-}
-
-#banner a {
-	color: white;
-}
-
 @media only screen and (max-width: 600px) {
 	#body {
 		background-image: none;
