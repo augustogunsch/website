@@ -1,5 +1,10 @@
 # Featured Projects
 
+## Cardmaster
+Flashcards web app, similar to Anki. Written with React and Python. Code
+available on [Github](https://github.com/augustogunsch/cardmaster). Check out
+the [public instance](https://cardmaster.site).
+
 ## Fsub
 Command-line SubRip file (.srt) editor written in Python. Available on my
 [Gitea](https://git.augustogunsch.com/augusto/fsub),
