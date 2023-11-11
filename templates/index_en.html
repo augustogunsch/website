@@ -37,10 +37,13 @@
 					</blockquote>
 					<figcaption>{{ author }}</figcaption>
 				</figure>
-				<span id="slogan">
-					I turn <mark>ideas</mark><br>into<br><mark>software</mark>.
-				</span>
+				<div id="slogan">
+					<div id="circle"></div>
+					<div id="circle-behind"></div>
+					I turn <mark>ideas</mark><br>into<br><mark id="typing"></mark>.
+				</div>
 			</main>
 		</div>
 	</body>
+	<script src="{{ url_for('static', filename='index.js') }}"></script>
 </html>

@@ -1,37 +1,43 @@
-let language = 'en';
+function simulateCommandPrompt(element, texts, speed, wait) {
+  const outputElement = document.getElementById(element);
+  const cursor = document.createElement('span');
+  cursor.classList.add('cursor');
+  cursor.textContent = '█';
 
-function loadPage(navButton) {
-	const selected = document.getElementsByClassName('selected')[0];
+  let currentIndex = 0;
 
-	if (selected != navButton) {
-		const xhttp = new XMLHttpRequest();
-		const content = document.getElementById('content');
-		const page = navButton.id;
+  function typeText() {
+    const text = texts[currentIndex];
+    let i = 0;
 
-		if(page != 'index') {
-			window.location.hash = page;
-			window.document.title = `Augusto Gunsch | ${navButton.innerHTML}`;
-		} else {
-			history.replaceState(null, null, ' ');
-			window.document.title = 'Augusto Gunsch';
-		}
+    function typeCharacter() {
+      if (i <= text.length) {
+        outputElement.textContent = text.slice(0, i);
+        outputElement.appendChild(cursor);
+        i++;
+        setTimeout(typeCharacter, speed);
+      } else {
+        setTimeout(() => {
+          currentIndex = (currentIndex + 1) % texts.length;
+          outputElement.textContent = '';
+          outputElement.appendChild(cursor);
+          typeText();
+        }, wait);
+      }
+    }
 
-		xhttp.onload = function() {
-			content.innerHTML = this.responseText;
-		}
-		xhttp.open('GET', `${language}/${page}`, true);
+    typeCharacter();
+  }
 
-		selected.classList.remove('selected');
-		navButton.classList.add('selected');
-		content.innerHTML = '<p>Loading...</p>';
-
-		xhttp.send();
-	}
+  typeText();
 }
 
-if(window.location.hash) {
-	const page = window.location.hash.split('#')[1];
-	const navButton = document.getElementById(page);
-	console.log(navButton);
-	loadPage(navButton);
-}
+const texts = [
+  'software',
+  'reality',
+  'solutions',
+  'innovation',
+  'technology'
+];
+
+simulateCommandPrompt('typing', texts, 100, 3000);
