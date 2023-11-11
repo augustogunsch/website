@@ -44,6 +44,8 @@
 #links {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 #links a {
@@ -62,7 +64,6 @@
 }
 
 #page {
-	height: 100%;
 	display: flex;
 	margin: 1rem;
 	margin-bottom: 4rem;
@@ -125,6 +126,7 @@
 	#header {
 		flex-direction: column;
 		align-items: center;
+		gap: 1rem;
 	}
 
 	#quote {
@@ -140,12 +142,45 @@
 		background-color: #EDAF1F;
 		color: black;
 	}
+
+	#links a {
+		margin: 0.3rem;
+	}
+}
+
+@media only screen and (max-width: 420px) {
+	#header {
+		padding: 1rem;
+	}
+}
+
+@media only screen and (max-width: 390px) {
+	#social {
+		display: none;
+	}
+
+	#links .button {
+		border-radius: 7px;
+	}
+
+	#links a {
+		padding: 0.6rem;
+	}
+
+	#header {
+		padding: 4px;
+		padding-bottom: 1rem;
+	}
 }
 
 
 @media only screen and (min-width: 600px) {
 	#quote {
 		max-width: 80%;
+	}
+
+	#page {
+		height: 100%;
 	}
 }
 
