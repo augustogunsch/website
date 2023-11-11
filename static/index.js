@@ -35,9 +35,9 @@ function simulateCommandPrompt(element, texts, speed, wait) {
 const texts = [
   'software',
   'reality',
-  'solutions',
-  'innovation',
-  'technology'
+  'profit',
+  'results',
+  'tech'
 ];
 
 simulateCommandPrompt('typing', texts, 100, 3000);
